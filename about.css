@@ -1,0 +1,147 @@
+/* Danfo */
+@import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
+/* Honk */
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+/* Unbounded */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+/* Azeret Mono */
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'danfo';
+    src: url('FONTS/Danfo/static/Danfo-Regular.ttf');
+    format: ('truetype');
+}
+
+/* Table of Contents
+1. Header Styles
+2. Navigation Styles
+3. Image Styles
+4. Main Content Styles
+5. Footer Styles
+6. Media Queries
+*/
+
+/* 1. Header Styles */
+header{
+    display: flex;
+}
+
+header h1{
+    font-family: 'Danfo', tahoma, sans-serif;
+    font-size: 70px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+/* 2. Navigation Styles */
+nav a{
+    display: block;
+    font: 1.2em 'Azeret Mono', tahoma, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-clip: padding-box;
+    border-style: solid;
+    border-width: 4px;
+    border-color: transparent;
+}
+
+nav a:hover{
+    color: red;
+    
+}
+
+li{
+    font-family: 'Azeret Mono', tahoma, sans-serif;
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 100px;
+    text-decoration: none;
+}
+
+ul{
+    text-align: center;
+    margin-left: 520px;
+}
+body{
+    background-color: #74EBD5;
+    background-image: linear-gradient(to right, #74EBD5 , #9FACE6);
+}
+
+/* 3. Image Styles */
+img{
+    width: 33%;
+    margin: 30px;
+    padding: 10px;
+    max-height: 500px;
+    border: solid 10px black;
+    border-radius: 5px;
+    float: left;
+    filter: grayscale(1);
+}
+
+img:hover{
+    filter: grayscale(0);
+    transition: 1s;
+    z-index: 2;
+    box-shadow: 1px 10px 5px rgba(0,0,0,0.5);
+    transform: scale(1.2);
+}
+
+/* 4. Main Content Styles */
+main{
+    padding: 30px;
+}
+
+h2{
+    padding-left: 30px;
+}
+
+main p{
+    font-family: 'Unbounded', tahoma, sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+main h2{
+    margin-top: 30px;
+    font-family: 'Unbounded', tahoma, sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+    color: red;
+}
+
+/* 5. Footer Styles */
+footer{
+    font-family: 'Azeret Mono', tahoma, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 180px;
+}
+
+/* 6. Media Queries */
+@media screen and (max-width:1370px){
+    ul{
+        margin-left: 250px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    ul{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:800px){
+    img{
+        width: 75%;
+        margin-right: 25px;
+    }
+
+    main h2{
+        margin: 0%;
+        padding: 0%;
+    }
+}
