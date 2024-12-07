@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="CSS/myersReset.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+<body>
+    <header>
+        <h1>JP</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <div>
+                <label for="firstName">First Name: </label>
+                <input type="text" id="firstName" name="firstName" required autofocus>
+            </div>
+            
+            <div>
+                <label for="lastName">Last Name: </label>
+                <input type="text" id="lastName" name="lastName" required>        
+            </div>
+            
+            <div>
+                <label for="email">E-Mail: </label>
+                <input type="text" id="email" name="email" required>   
+            </div>
+
+            
+            <div>
+                <h2>Did you had any previous meeting?</h2>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="meeting?" value="yes">
+
+                <label for="no">No</label>
+                <input type="radio" id="no" name="meeting?"value="no">
+            </div>
+            
+
+            <div>
+                <h2>Select the project you liked:</h2>
+                <label for="java">Java Project</label>
+                <input type="checkbox" checked id="java" name="project" value="java">
+                <label for="pv">Photography/ Videography</label>
+                <input type="checkbox" id="pv" name="project" value="pv">
+                <label for="free">FreeLancing</label>
+                <input type="checkbox" id="free" name="project" value="free">
+            </div>
+            
+            <div>
+                <input type="submit" name="submit" value="Submit">
+            </div>
+            
+        </form>    
+    </main>
+    <footer>
+        &copy; Javalkumar(0845066) WEB CSS
+    </footer>
+
+</body>
+</html>
